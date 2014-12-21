@@ -37,4 +37,4 @@ tidydata <- read.table("tidydata.txt")
 ```
 ## Data Code Book
 
-The [codebook](CodeBook.md) available in this repo describes the variables, the data, the transformations that are done and the clean up that was performed on the data
+The [codebook](CodeBook.md) available in this repo describes the tyde table, the variables name, the data type, and a description of the variable name
