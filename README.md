@@ -17,15 +17,21 @@ Create a R script that does the following
 * Appropriately labels the data set with descriptive variable names.
 *From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-## R code
+## How to run the R script code
 
-The R code that is used for analysis is available in the [run_analysis.R](run_analysis.R) file.
+The R code that is used for analysis is available in the [run_analysis.R](run_analysis.R) file, the script does the following:
 
-Source the file in R using the following command and it will automatically download the dataset, perform the transformation, tidy the data and save it in the file `tidydata.txt`
-```R
-source("run_analysis.R")
-```
-The tidy data set can be loade back into an R table using the following command
+* Bind the training and the test serts to create one data set.
+* Extracts only the measurements on the mean and standard deviation for each measurement.
+* Uses descriptive activity names to name the activities in the data set (columns name)
+* Appropriately labels the data set with descriptive activity names.
+* Creates the final tidy data set with the average of each variable for each activity and each subject.
+
+It is neccessary to have the libraries `dplyr`and `magrittr` installed for running `run_analysis.R`.
+
+## The tidy data
+
+The final tidy data set it is created in the working directory and can be loaded back into an R table using the following command
 ```R
 tidydata <- read.table("tidydata.txt")
 ```
